@@ -1,0 +1,17 @@
+.logo {
+    display: block;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: getColor('accent');
+    letter-spacing: 0.03em;
+    margin-right: 93px;
+
+
+&__black {
+    color: getColor('black');
+}
+
+&__white {
+    color: getColor('white');
+}}

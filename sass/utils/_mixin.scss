@@ -1,0 +1,30 @@
+@mixin visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+@mixin section-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    font-weight: 700;
+    color: getColor('deep');
+    letter-spacing: 0.03em;
+}
+
+@mixin flex {
+    display: flex;
+}
+
+@mixin section {padding: 94px 0;}
+@mixin container {width: 1170px;
+    margin: 0 auto;}
+

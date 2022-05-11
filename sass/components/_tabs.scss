@@ -1,0 +1,25 @@
+.tabs {
+  @include section;
+
+  &__body {
+    @include container;
+  }
+
+  &__hidden {
+    @include visually-hidden;
+  }
+
+  &__list {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+
+  &__item {
+    margin-right: 8px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.subscription {
+  display: inline-block;
+  margin-left: 93px;
+
+  &__title {
+    @extend .footer-social__title;
+  }
+  &__input {
+ 
+    background-color: inherit;
+    border: 1px solid #ffffff30;
+    border-radius: 4px;
+    width: 358px;
+    padding-left: 16px;
+    box-sizing: border-box;
+    height: 50px;
+    &:hover,
+      &:focus {
+        color: getColor('white');
+  }}
+
+  &__icon {
+    fill: getColor('white');
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+  }
+
+  &__btn {
+    @extend .button__primary;
+    height: 50px;
+    display: flex;
+    padding: 10px 29px;
+    margin-left: 12px;
+  }
+
+  &__body {
+    display: flex;
+  }
+}

@@ -17,7 +17,6 @@
     background-color: getColor('dark');
 box-shadow: $box-shadow;
 
-&__body {@include container;}
 &__title {
     width: 696px;
     margin-top: 0px;

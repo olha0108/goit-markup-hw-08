@@ -1,25 +1,17 @@
-.tabs {
-  @include section;
+.tabs__hidden {
+  @include visually-hidden;
+}
 
-  &__body {
-    @include container;
-  }
+.tabs__list {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
 
-  &__hidden {
-    @include visually-hidden;
-  }
+.tabs__item {
+  margin-right: 8px;
 
-  &__list {
-    display: flex;
-    margin-bottom: 50px;
-    justify-content: center;
-  }
-
-  &__item {
-    margin-right: 8px;
-
-    &:last-child {
-      margin-right: 0px;
-    }
+  &:last-child {
+    margin-right: 0px;
   }
 }

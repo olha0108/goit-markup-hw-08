@@ -1,20 +1,13 @@
-.comanda {
-  @include section;
+.team {
   text-align: center;
-  background-color: getColor('foreground');
+  background-color: getColor('foreground');}
 
-  &__body {
-    @include container;
-  }
 
-  &__title {
-    @include section-title;
-  }
-  &__section {
+.team__section {
     @include flex;
   }
 
-  &__item {
+.team__item {
     background-color: getColor('white');
     flex-wrap: wrap;
     width: calc((100% - 90px) / 4);
@@ -25,11 +18,11 @@
     }
   }
 
-  &__box {
+.team__box {
     padding: 30px 0;
   }
 
-  &__name {
+.team__title {
     font-weight: 500;
     color: getColor('deep');
     font-size: 16px;
@@ -37,26 +30,26 @@
     letter-spacing: 0.03em;
     margin-bottom: 10px;
   }
-  &__text {
+.team__text {
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
   }
-  &__social {
+.socials {
     @include flex;
     display: flex;
     justify-content: center;
     margin-top: 16px;
   }
 
-  &__icon {
+.socials__icon {
     max-width: 20px;
     max-height: 20px;
     fill: getColor('client');
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &__social-item {
+.socials__item {
     width: 44px;
     height: 44px;
     margin-right: 10px;
@@ -65,7 +58,7 @@
         }
   }
 
-  &__social-link {
+.socials__link {
     display: flex;
     width: 100%;
     height: 100%;
@@ -79,12 +72,11 @@
     &:focus {
       background-color: getColor('accent');
 
-      & .comanda__icon,
-      & .comanda__icon {
+      & .socials__icon,
+      & .socials__icon {
         fill: getColor('white');
       }
     }
   }
 
 
-}

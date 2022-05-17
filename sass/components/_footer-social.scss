@@ -1,20 +1,20 @@
 .footer-social {
   display: inline-block;
 
-  &__title {
+.footer-social__title {
     text-transform: uppercase;
     font-weight: 700;
     color: getColor('white');
     font-size: 14px;
     margin-bottom: 20px;
   }
-  &__list {
+.footer-social__list {
     display: flex;
     justify-content: center;
     margin-top: 16px;
   }
 
-  &__item {
+.footer-social__item {
     width: 44px;
     height: 44px;
     margin-right: 10px;
@@ -24,12 +24,12 @@
     }
   }
 
-  &__icon {
+.footer-social__icon {
     max-height: 20px;
     fill: getColor('white');
   }
 
-  &__link {
+.footer-social__link {
     display: flex;
     align-items: center;
     background-color: rgba(100, 100, 100, 0.25);

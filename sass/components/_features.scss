@@ -1,48 +1,40 @@
-.features {
-  @include section;
+.features__section {
+  @include flex;
+}
+.features__hidden {
+  @include visually-hidden;
+}
+.features__list {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+.features__text {
+  line-height: 1.71;
+}
 
-  &__body {
-    @include container;
+.features__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: getColor("deep");
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.features__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: getColor("foreground");
+  &:last-child {
+    margin-right: 0px;
   }
-
-  &__section {
-    @include flex;
-  }
-  &__hidden {
-    @include visually-hidden;
-  }
-  &__list {
-    width: calc((100% - 90px) / 4);
-    margin-right: 30px;
-    &:last-child {
-      margin-right: 0px;
-    }
-  }
-  &__text {
-    line-height: 1.71;
-  }
-
-  &__title {
-    text-transform: uppercase;
-    font-weight: 700;
-    color: getColor('deep');
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-  &__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-    height: 120px;
-    border-radius: 4px;
-    background-color: getColor('foreground');
-    &:last-child {
-      margin-right: 0px;
-    }
-  }
-  &__icon {
-    max-width: 70px;
-    max-height: 70px;
-  }
+}
+.features__icon {
+  max-width: 70px;
+  max-height: 70px;
 }

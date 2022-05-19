@@ -1072,8 +1072,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ececec;
   position: relative;
 }
@@ -1107,6 +1107,12 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__nav {
+    margin-left: 0px;
   }
 }
 
@@ -1156,7 +1162,6 @@ img {
 
 .header__link {
   display: block;
-  position: relative;
   color: #2f303a;
   text-decoration: none;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1169,6 +1174,12 @@ img {
 
 .header__link:hover, .header__link:focus {
   color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .header__link {
+    position: relative;
+  }
 }
 
 .current {
@@ -1185,7 +1196,7 @@ img {
   background-color: #2196f3;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .current::after {
     display: none;
   }
@@ -1237,6 +1248,7 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-right: 0px;
   }
 }
 
@@ -1335,6 +1347,7 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 60px;
+    padding-left: 0px;
   }
 }
 
@@ -1667,6 +1680,8 @@ img {
 }
 
 .portfol__item {
+  margin-left: 15px;
+  margin-right: 15px;
   margin-bottom: 30px;
   background-color: #ffffff;
   outline: 1px solid #ececec;
@@ -1678,12 +1693,6 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .portfol__item {
-    margin-right: 15px;
-  }
-  .portfol__item:nth-child(2n) {
-    margin-right: 0px;
-  }
   .portfol__item:nth-last-child(-n + 1) {
     margin-bottom: 0px;
   }
@@ -1691,6 +1700,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .portfol__item {
+    margin-left: 0px;
     margin-right: 30px;
     margin-bottom: 30px;
   }
@@ -1725,7 +1735,7 @@ img {
   font-size: 18px;
   line-height: 2;
   color: #2f303a;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
 }
 
 .portfol__text {
@@ -1783,10 +1793,16 @@ img {
   opacity: 0.9;
 }
 
+@media screen and (max-width: 767px) {
+  .subscription {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .subscription {
     display: block;
-    text-align: center;
   }
 }
 
@@ -1813,11 +1829,16 @@ img {
 }
 
 .subscription__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: inherit;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 1px solid #ffffff30;
   border-radius: 4px;
   width: 450px;
-  padding-left: 16px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 50px;
@@ -1830,6 +1851,7 @@ img {
 @media screen and (min-width: 1200px) {
   .subscription__input {
     width: 358px;
+    padding-left: 16px;
   }
 }
 
@@ -1858,6 +1880,14 @@ img {
   .subscription__btn {
     margin-left: 12px;
     margin-top: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscription__body {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1911,18 +1941,15 @@ img {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0px;
     width: 480px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
   .menu-container.is-open {
     display: block;
-    height: 796px;
-    padding: 48px 40px;
-    text-align: center;
-    font-size: 20px;
-    background-color: #d0e8e8;
+    height: 756px;
+    padding: 8px 40px 48px 40px;
+    background-color: #ffffff;
   }
 }
 

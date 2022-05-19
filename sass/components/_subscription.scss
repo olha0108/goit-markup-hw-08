@@ -1,7 +1,10 @@
 .subscription {
+  @media screen and (max-width: 767px) {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
   @media screen and (min-width: 768px) {
     display: block;
-    text-align: center;
   }
 
   @media screen and (min-width: 1200px) {
@@ -22,11 +25,12 @@
   }
 }
 .subscription__input {
+  display: flex;
   background-color: inherit;
+  justify-content: center;
   border: 1px solid #ffffff30;
   border-radius: 4px;
   width: 450px;
-  padding-left: 16px;
   box-sizing: border-box;
   height: 50px;
   &:hover,
@@ -35,6 +39,7 @@
   }
   @media screen and (min-width: 1200px) {
     width: 358px;
+    padding-left: 16px;
   }
 }
 
@@ -63,6 +68,9 @@
 
 .subscription__body {
   @media screen and (min-width: 768px) {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media screen and (min-width: 1200px) {

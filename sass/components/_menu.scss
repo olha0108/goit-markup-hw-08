@@ -35,18 +35,15 @@
     display: none;
     position: absolute;
     top: 100%;
-    left: 0px;
     width: 480px;
     box-sizing: border-box;
 
     &.is-open {
       display: block;
-      height: 796px;
-      padding: 48px 40px;
-      text-align: center;
-      font-size: 20px;
-      background-color: rgb(208, 232, 232);
-    }
+      height: 756px;
+      padding: 8px 40px 48px 40px;
+      background-color: getColor("white");
+        }
   }
 
   @media screen and (min-width: 768px) {

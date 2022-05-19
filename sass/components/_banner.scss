@@ -1,32 +1,61 @@
 .banner {
-    letter-spacing: 0.06em;
-    text-align: center;
+  letter-spacing: 0.06em;
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  max-height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/header-img-mobile.jpg");
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: getColor("dark");
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/header-img-tablet.jpg");
+    box-shadow: $box-shadow;
+  }
+
+  @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
+    background-size: contain;
     max-width: 1600px;
     max-height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url("../images/img-banner-background.jpg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: getColor('dark');
-box-shadow: $box-shadow;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/img-banner-background.jpg");
+  }
+}
 
-&__title {
+.banner__title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  color: getColor("white");
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
     width: 696px;
-    margin-top: 0px;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    color: getColor('white');
-    font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-}}
+  }
+}

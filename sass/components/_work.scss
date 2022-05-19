@@ -1,9 +1,13 @@
 .work {
   padding-top: 0;
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
 
 .work__list {
   @include flex;
+  margin-top: 50px;
 }
 
 .work__item {

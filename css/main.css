@@ -1634,8 +1634,24 @@ img {
           justify-content: center;
 }
 
+@media screen and (max-width: 767px) {
+  .tabs__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 .tabs__item {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .tabs__item {
+    margin-bottom: 15px;
+  }
 }
 
 .tabs__item:last-child {
@@ -1651,7 +1667,6 @@ img {
 }
 
 .portfol__item {
-  margin-right: 30px;
   margin-bottom: 30px;
   background-color: #ffffff;
   outline: 1px solid #ececec;
@@ -1662,12 +1677,29 @@ img {
           transform: translatey(0);
 }
 
-.portfol__item:nth-child(3n) {
-  margin-right: 0px;
+@media screen and (min-width: 768px) {
+  .portfol__item {
+    margin-right: 15px;
+  }
+  .portfol__item:nth-child(2n) {
+    margin-right: 0px;
+  }
+  .portfol__item:nth-last-child(-n + 1) {
+    margin-bottom: 0px;
+  }
 }
 
-.portfol__item:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
+@media screen and (min-width: 1200px) {
+  .portfol__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .portfol__item:nth-child(3n) {
+    margin-right: 0px;
+  }
+  .portfol__item:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+  }
 }
 
 .portfol__link {
@@ -1711,6 +1743,19 @@ img {
 .portfol__box {
   position: relative;
   overflow: hidden;
+  width: 450px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfol__box {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfol__box {
+    width: 370px;
+  }
 }
 
 .portfol__overlay {
@@ -1908,11 +1953,6 @@ img {
   .contacts {
     margin-left: auto;
   }
-}
-
-.navigation,
-.contacts {
-  outline: 1px solid teal;
 }
 
 .menu__link {

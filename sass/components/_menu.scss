@@ -58,19 +58,14 @@
 }
 
 .contacts {
-    @media screen and (min-width: 768px) {
-        margin-left: auto;
-      }
-  @media screen and (min-width: 1200px) {
-          margin-left: auto;
-    }
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
   }
-
-
-.navigation,
-.contacts {
-  outline: 1px solid teal;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 }
+
 .menu__link {
   display: flex;
   padding-top: 64px;
@@ -85,8 +80,9 @@
   font-size: 18px;
   line-height: 22px;
   color: getColor("accent");
-padding-right: 10px;
-padding-left: 10px;
-
+  padding-right: 10px;
+  padding-left: 10px;
 }
-.first{padding-left: 0px;}
+.first {
+  padding-left: 0px;
+}

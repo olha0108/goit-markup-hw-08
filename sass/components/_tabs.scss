@@ -6,10 +6,17 @@
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }
 
 .tabs__item {
   margin-right: 8px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 
   &:last-child {
     margin-right: 0px;

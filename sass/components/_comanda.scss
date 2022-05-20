@@ -53,7 +53,6 @@
   letter-spacing: 0.03em;
 }
 .socials {
-  @include flex;
   display: flex;
   justify-content: center;
   margin-top: 16px;

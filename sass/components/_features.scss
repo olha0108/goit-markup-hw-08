@@ -8,7 +8,7 @@
   }
 }
 .features__hidden {
-  @include visually-hidden;
+  @extend %visually-hidden;
 }
 .features__item {
   margin-bottom: 30px;

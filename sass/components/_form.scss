@@ -79,7 +79,7 @@
   letter-spacing: 0.03em;
 }
 .form__input-checkbox {
-  @include visually-hidden;
+  @extend %visually-hidden;
 
   &:checked + .form__icons-checkbox {
     background-color: getColor("accent");

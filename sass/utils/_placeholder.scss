@@ -1,4 +1,4 @@
-@mixin visually-hidden {
+%visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -10,7 +10,7 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-@mixin section-title {
+%section-title {
     margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.16;
@@ -20,11 +20,7 @@
     letter-spacing: 0.03em;
 }
 
-@mixin flex {
-    display: flex;
-}
-
-@mixin section {padding: 94px 0;}
-@mixin container {width: 1170px;
+%section {padding: 94px 0;}
+%container {width: 1170px;
     margin: 0 auto;}
 

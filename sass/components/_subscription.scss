@@ -29,12 +29,15 @@
   border: 1px solid #ffffff30;
   border-radius: 4px;
   width: 100%;
-  min-width: 450px;
+  max-width: 450px;
   box-sizing: border-box;
   height: 50px;
   &:hover,
   &:focus {
     color: getColor('white');
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 450px;
   }
   @media screen and (min-width: 1200px) {
     min-width: 358px;

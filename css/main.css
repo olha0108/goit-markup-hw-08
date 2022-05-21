@@ -1108,7 +1108,12 @@ img {
 .form__text {
   padding-left: 7px;
   font-size: 12px;
-  white-space: nowrap;
+}
+
+@media screen and (min-width: 768px) {
+  .form__text {
+    white-space: nowrap;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -2009,7 +2014,7 @@ img {
     display: none;
     position: absolute;
     top: 0%;
-    width: 480px;
+    max-width: 480px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }

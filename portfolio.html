@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
-    integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css"
+  integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />-->
     <link rel="stylesheet" href="./css/main.min.css" />
@@ -59,22 +59,14 @@
             </li>
           </ul>
           <ul class="menu__link">
-            <li> <a href="" class="menu__item first">Instagram</a></li>
-            <p>|</p>
-            <li> <a href="" class="menu__item">Twitter</a></li>
-            <p>|</p>
-            <li> <a href="" class="menu__item">Facebook</a></li>
-            <p>|</p>
+            <li> <a href="" class="menu__item first">Instagram</a>|</li>
+            <li> <a href="" class="menu__item">Twitter</a>|</li>
+            <li> <a href="" class="menu__item">Facebook</a>|</li>
             <li> <a href="" class="menu__item">LinkedIn</a></li>
           </ul>
         </div>
-
         <div>
-
-
         </div>
-
-
       </div>
     </nav>
   </div>
@@ -83,7 +75,7 @@
   <main>
     <section class="section">
       <div class="container">
-        <h1 class="tabs__hidden"></h1>
+        <h1 class="tabs__hidden"> </h1>
         <ul class="tabs__list">
           <li class="tabs__item">
             <button type="button" class="btn__primary">Все</button>
@@ -109,11 +101,15 @@
         </ul>
 
         <ul class="portfol">
-
           <li class="portfol__item">
             <a href="" class="portfol__link">
               <div class="portfol__box">
-                <img src="./images/img-p-1.jpg" alt="Технокряк" class="portfol__pictures"/>
+<picture>
+<source srcset="./images/img-1m-1x.jpg 1x, ./images/img-1m-2x.jpg 2x " media="(max-width: 767px)"/>
+<source srcset="./images/img-1t-1x.jpg 1x, ./images/img-1t-2x.jpg 2x" media="(max-width: 1199px)"/>
+<source srcset="./images/img-1d-1x.jpg 1x, ./images/img-1d-2x.jpg 2x" media="(min-width: 1200px)"/>
+
+                <img src="./images/img-p-1.jpg" alt="Технокряк" class=""/></picture>
                 <div class="portfol__overlay">
                   <p class="portfol__label">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -129,7 +125,11 @@
           <li class="portfol__item">
             <a href="" class="portfol__link">
               <div class="portfol__box">
-                <img src="./images/img-p-2.jpg" alt="Постер New Orlean vs Golden Star" class="portfol__pictures" />
+<picture>
+<source srcset="./images/img-2m-1x.jpg 1x, ./images/img-2m-2x.jpg 2x " media="(max-width: 767px)"/>
+<source srcset="./images/img-2t-1x.jpg 1x, ./images/img-2t-2x.jpg 2x" media="(max-width: 1199px)"/>
+<source srcset="./images/img-2d-1x.jpg 1x, ./images/img-2d-2x.jpg 2x" media="(min-width: 1200px)"/>
+                <img src="./images/img-p-2.jpg" alt="Постер New Orlean vs Golden Star" class="" /></picture>
                 <div class="portfol__overlay">
                   <p class="portfol__label">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -145,7 +145,11 @@
           <li class="portfol__item">
             <a href="" class="portfol__link">
               <div class="portfol__box">
-                <img src="./images/img-p-3.jpg" alt="Ресторан Seafood" class="portfol__pictures" />
+<picture>
+<source srcset="./images/img-3m-1x.jpg 1x, ./images/img-3m-2x.jpg 2x " media="(max-width: 767px)"/>
+<source srcset="./images/img-3t-1x.jpg 1x, ./images/img-3t-2x.jpg 2x" media="(max-width: 1199px)"/>
+<source srcset="./images/img-3d-1x.jpg 1x, ./images/img-3d-2x.jpg 2x" media="(min-width: 1200px)"/>
+                <img src="./images/img-p-3.jpg" alt="Ресторан Seafood" class="" /></picture>
                 <div class="portfol__overlay">
                   <p class="portfol__label">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -161,7 +165,10 @@
           <li class="portfol__item">
             <a href="" class="portfol__link">
               <div class="portfol__box">
-                <img src="./images/img-p-4.jpg" alt="Проект Prime" class="portfol__pictures" />
+<source srcset="./images/img-4m-1x.jpg 1x, ./images/img-4m-2x.jpg 2x " media="(max-width: 767px)"/>
+<source srcset="./images/img-4t-1x.jpg 1x, ./images/img-4t-2x.jpg 2x" media="(max-width: 1199px)"/>
+<source srcset="./images/img-4d-1x.jpg 1x, ./images/img-4d-2x.jpg 2x" media="(min-width: 1200px)"/>
+                <img src="./images/img-p-4.jpg" alt="Проект Prime" class="" /></picture>
                 <div class="portfol__overlay">
                   <p class="portfol__label">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это
@@ -179,7 +186,10 @@
           <li class="portfol__item">
             <a href="" class="portfol__link">
               <div class="portfol__box">
-                <img src="./images/img-p-5.jpg" alt="Проект Boxes" class="portfol__pictures" />
+<source srcset="./images/img-5m-1x.jpg 1x, ./images/img-5m-2x.jpg 2x " media="(max-width: 767px)"/>
+<source srcset="./images/img-5t-1x.jpg 1x, ./images/img-5t-2x.jpg 2x" media="(max-width: 1199px)"/>
+<source srcset="./images/img-5d-1x.jpg 1x, ./images/img-5d-2x.jpg 2x" media="(min-width: 1200px)"/>
+                <img src="./images/img-p-5.jpg" alt="Проект Boxes" class="" /></picture>
                 <div class="portfol__overlay">
                   <p class="portfol__label">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это
@@ -197,7 +207,10 @@
           <li class="portfol__item">
             <a href="" class="portfol__link">
               <div class="portfol__box">
-                <img src="./images/img-p-6.jpg" alt="Inspiration has no Borders" class="portfol__pictures" />
+<source srcset="./images/img-6m-1x.jpg 1x, ./images/img-6m-2x.jpg 2x " media="(max-width: 767px)"/>
+<source srcset="./images/img-6t-1x.jpg 1x, ./images/img-6t-2x.jpg 2x" media="(max-width: 1199px)"/>
+<source srcset="./images/img-6d-1x.jpg 1x, ./images/img-6d-2x.jpg 2x" media="(min-width: 1200px)"/>
+                <img src="./images/img-p-6.jpg" alt="Inspiration has no Borders" class="" /></picture>
                 <div class="portfol__overlay">
                   <p class="portfol__label">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это
@@ -215,7 +228,10 @@
           <li class="portfol__item">
             <a href="" class="portfol__link">
               <div class="portfol__box">
-                <img src="./images/img-p-7.jpg" alt="Издание Limited Edition" class="portfol__pictures" />
+<source srcset="./images/img-7m-1x.jpg 1x, ./images/img-7m-2x.jpg 2x " media="(max-width: 767px)"/>
+<source srcset="./images/img-7t-1x.jpg 1x, ./images/img-7t-2x.jpg 2x" media="(max-width: 1199px)"/>
+<source srcset="./images/img-7d-1x.jpg 1x, ./images/img-7d-2x.jpg 2x" media="(min-width: 1200px)"/>
+                <img src="./images/img-p-7.jpg" alt="Издание Limited Edition" class="" /></picture>
                 <div class="portfol__overlay">
                   <p class="portfol__label">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это
@@ -233,7 +249,10 @@
           <li class="portfol__item">
             <a href="" class="portfol__link">
               <div class="portfol__box">
-                <img src="./images/img-p-8.jpg" alt="Проект LAB" class="portfol__pictures" />
+<source srcset="./images/img-8m-1x.jpg 1x, ./images/img-8m-2x.jpg 2x " media="(max-width: 767px)"/>
+<source srcset="./images/img-8t-1x.jpg 1x, ./images/img-8t-2x.jpg 2x" media="(max-width: 1199px)"/>
+<source srcset="./images/img-8d-1x.jpg 1x, ./images/img-8d-2x.jpg 2x" media="(min-width: 1200px)"/>
+                <img src="./images/img-p-8.jpg" alt="Проект LAB" class="" /></picture>
                 <div class="portfol__overlay">
                   <p class="portfol__label">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это
@@ -251,7 +270,10 @@
           <li class="portfol__item">
             <a href="" class="portfol__link">
               <div class="portfol__box">
-                <img src="./images/img-p-9.jpg" alt="Growing Business" class="portfol__pictures" />
+<source srcset="./images/img-9m-1x.jpg 1x, ./images/img-9m-2x.jpg 2x " media="(max-width: 767px)"/>
+<source srcset="./images/img-9t-1x.jpg 1x, ./images/img-9t-2x.jpg 2x" media="(max-width: 1199px)"/>
+<source srcset="./images/img-9d-1x.jpg 1x, ./images/img-9d-2x.jpg 2x" media="(min-width: 1200px)"/>
+                <img src="./images/img-p-9.jpg" alt="Growing Business" class="" /></picture>
                 <div class="portfol__overlay">
                   <p class="portfol__label">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это
@@ -331,10 +353,8 @@
     </form>
     <!--end footer-subscription-->
   </div>
-  </div>
 </footer>
 <script src="./js/mobile-menu.js"></script>
 <script src="./js/modal.js"></script>
 </body>
-
 </html>

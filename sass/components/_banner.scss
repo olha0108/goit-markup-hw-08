@@ -6,24 +6,23 @@
   max-height: 400px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/header-img-mobile.jpg");
+  background-size: cover;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/header-img-mobile.jpg');
 
   background-position: center;
   background-repeat: no-repeat;
-  background-color: getColor("dark");
+  background-color: getColor('dark');
   @media screen and (min-resolution: 2dppx) {
-    background-image: url("../images/img-2x-960.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/img-2x-960.jpg');
   }
   @media screen and (min-width: 768px) {
-    background-image: url("../images/header-img-tablet.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/header-img-tablet.jpg');
     box-shadow: $box-shadow;
     @media screen and (min-resolution: 2dppx) {
-      background-image: url("../images/img-2x-1536.jpg");
+      background-image: url('../images/img-2x-1536.jpg');
     }
   }
 
@@ -33,9 +32,9 @@
     background-size: contain;
     max-width: 1600px;
     max-height: 600px;
-    background-image: url("../images/img-banner-background.jpg");
+    background-image: url('../images/img-banner-background.jpg');
     @media screen and (min-resolution: 2dppx) {
-      background-image: url("../images/img-2x-3200.jpg");
+      background-image: url('../images/img-2x-3200.jpg');
     }
   }
 }
@@ -45,7 +44,7 @@
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  color: getColor("white");
+  color: getColor('white');
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;

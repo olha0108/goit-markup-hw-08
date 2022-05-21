@@ -9,6 +9,10 @@
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
     justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
   }
 }
 
@@ -17,8 +21,10 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 15px;
   }
-
   &:last-child {
     margin-right: 0px;
+  }
+  &:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
   }
 }
